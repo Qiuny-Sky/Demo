@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF12E3091E6E81020044CB5A /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF12E3081E6E81020044CB5A /* CanvasView.m */; };
+		AF12E30C1E6EB3640044CB5A /* CycleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF12E30B1E6EB3640044CB5A /* CycleProgressView.m */; };
 		AF69D4161E65209B00D7D24B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF69D4151E65209B00D7D24B /* main.m */; };
 		AF69D4191E65209B00D7D24B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF69D4181E65209B00D7D24B /* AppDelegate.m */; };
 		AF69D41C1E65209B00D7D24B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF69D41B1E65209B00D7D24B /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF12E3071E6E81020044CB5A /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		AF12E3081E6E81020044CB5A /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		AF12E30A1E6EB3640044CB5A /* CycleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleProgressView.h; sourceTree = "<group>"; };
+		AF12E30B1E6EB3640044CB5A /* CycleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleProgressView.m; sourceTree = "<group>"; };
 		AF69D4111E65209B00D7D24B /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF69D4151E65209B00D7D24B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF69D4171E65209B00D7D24B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 				AF69D4181E65209B00D7D24B /* AppDelegate.m */,
 				AF69D41A1E65209B00D7D24B /* ViewController.h */,
 				AF69D41B1E65209B00D7D24B /* ViewController.m */,
+				AF12E3071E6E81020044CB5A /* CanvasView.h */,
+				AF12E3081E6E81020044CB5A /* CanvasView.m */,
+				AF12E30A1E6EB3640044CB5A /* CycleProgressView.h */,
+				AF12E30B1E6EB3640044CB5A /* CycleProgressView.m */,
 				AF69D41D1E65209B00D7D24B /* Main.storyboard */,
 				AF69D4201E65209B00D7D24B /* Assets.xcassets */,
 				AF69D4221E65209B00D7D24B /* LaunchScreen.storyboard */,
@@ -207,6 +217,7 @@
 				TargetAttributes = {
 					AF69D4101E65209B00D7D24B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4S6EJZUGQ6;
 					};
 					AF69D4291E65209B00D7D24B = {
 						CreatedOnToolsVersion = 7.3;
@@ -272,6 +283,8 @@
 			files = (
 				AF69D41C1E65209B00D7D24B /* ViewController.m in Sources */,
 				AF69D4191E65209B00D7D24B /* AppDelegate.m in Sources */,
+				AF12E3091E6E81020044CB5A /* CanvasView.m in Sources */,
+				AF12E30C1E6EB3640044CB5A /* CycleProgressView.m in Sources */,
 				AF69D4161E65209B00D7D24B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,10 +428,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4S6EJZUGQ6;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sensetime.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +443,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4S6EJZUGQ6;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sensetime.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +519,7 @@
 				AF69D4401E65209C00D7D24B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF69D4411E65209C00D7D24B /* Build configuration list for PBXNativeTarget "demoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +528,7 @@
 				AF69D4431E65209C00D7D24B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF69D4441E65209C00D7D24B /* Build configuration list for PBXNativeTarget "demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +537,7 @@
 				AF69D4461E65209C00D7D24B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
