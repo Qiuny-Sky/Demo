@@ -36,6 +36,7 @@
     CGContextAddPath(context, path);
     
     [[UIColor redColor] set];
+    CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
     CGContextSetLineWidth(context,  2);
     CGContextStrokePath(context);
 }
